@@ -47,6 +47,8 @@ public class Test2 {
             Class.forName("java.sql.Driver");
             Connection con=DriverManager.getConnection("jdbc:mysql://localhost/cs6422", "root", "qwert123");
             Statement stmt=con.createStatement();
+            String q="SELECT * from TWEET;"; 
+            stmt.executeQuery(q);
             //run(stmt);
             for(int i=0; i<srr.length; i++) {
                 Thr temp = new Thr(stmt, srr[i]);
