@@ -11,7 +11,7 @@ import java.sql.*;
  */
 public class InsertSQL {
     public static void main(String[] args) {
-        String q = "insert into user values ('efgh', 1234567899, 'EF', 'GH');";
+        String q = "insert into user values ('ijkl', 1234567099, 'IJ', 'KL');";
         try {
             Class.forName("java.sql.Driver");
             Connection con=DriverManager.getConnection("jdbc:mysql://localhost/assign4", "root", "qwert123");
